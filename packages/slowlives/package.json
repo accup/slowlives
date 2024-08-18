@@ -1,0 +1,16 @@
+{
+  "name": "slowlives",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@vanilla-extract/css": "^1.15.3",
+    "@vanilla-extract/recipes": "^0.5.4",
+    "@vanilla-extract/vite-plugin": "^4.0.13",
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.1"
+  }
+}

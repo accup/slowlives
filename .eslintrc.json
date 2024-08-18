@@ -1,0 +1,78 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:react-hooks/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:storybook/recommended",
+    "plugin:mdx/recommended",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "unused-imports", "jsx-a11y"],
+  "rules": {
+    "no-useless-rename": "error",
+    "object-shorthand": "error",
+    "curly": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "varsIgnorePattern": "^_",
+        "argsIgnorePattern": "^_",
+        "caughtErrorsIgnorePattern": "^_"
+      }
+    ],
+    "@typescript-eslint/prefer-enum-initializers": "error",
+    "@typescript-eslint/prefer-literal-enum-member": "error",
+    "react-hooks/exhaustive-deps": "error",
+    "unused-imports/no-unused-imports": "error"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": true
+    },
+    "mdx/code-blocks": true
+  },
+  "overrides": [
+    {
+      "files": ["src/**/*.ts", "src/**/*.tsx"],
+      "excludedFiles": ["src/**/*.stories.tsx", "src/sandbox/**/*"],
+      "parserOptions": {
+        "project": "tsconfig.src.json"
+      }
+    },
+    {
+      "files": [
+        ".storybook/preview.tsx",
+        "src/**/*.stories.tsx",
+        "src/**/*.mdx",
+        "src/sandbox/**/*"
+      ],
+      "parserOptions": {
+        "project": "tsconfig.storybook.json"
+      }
+    },
+    {
+      "files": ["vite.config.ts"],
+      "parserOptions": {
+        "project": "tsconfig.node.json"
+      }
+    },
+    {
+      "files": [
+        "src/**/*.mdx"
+      ],
+      "rules": {
+        "unused-imports/no-unused-imports": "off",
+        "@typescript-eslint/no-unused-vars": "off"
+      }
+   }
+  ]
+}

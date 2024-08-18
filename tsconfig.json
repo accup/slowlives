@@ -1,0 +1,59 @@
+// see: https://www.typescriptlang.org/tsconfig
+{
+  "compilerOptions": {
+    // Type Checking
+
+    "strict": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "exactOptionalPropertyTypes": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Modules
+
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "types": [],
+
+    // Emit
+
+    "noEmit": true,
+
+    // JavaScript Support
+
+    "allowJs": false,
+
+    // Editor Support
+
+    // Interop Constraints
+
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // Backwards Compatibility
+
+    // Language and Environment
+
+    "jsx": "react-jsx",
+    "lib": ["ESNext", "DOM"],
+    "target": "ESNext",
+
+    // Compiler Diagnostics
+
+    // Projects
+
+    // Output Formatting
+
+    // Completeness
+
+    "skipLibCheck": true
+  }
+}
