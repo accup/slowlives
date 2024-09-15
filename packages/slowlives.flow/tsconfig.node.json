@@ -2,7 +2,7 @@
 {
   "extends": "@accup/slowlives.tsconfig/node",
   "compilerOptions": {
-    "noEmit": true
+    "composite": true
   },
-  "include": ["eslint.config.js", "commitlint.config.ts"]
+  "include": ["vite.config.ts"]
 }

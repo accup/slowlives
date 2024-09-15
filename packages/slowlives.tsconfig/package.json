@@ -1,0 +1,13 @@
+{
+  "name": "@accup/slowlives.tsconfig",
+  "private": true,
+  "exports": {
+    "./vite": "./src/vite/tsconfig.json",
+    "./node": "./src/node/tsconfig.json"
+  },
+  "peerDependencies": {
+    "@types/node": "catalog:",
+    "eslint-plugin-import-access": "catalog:",
+    "vite": "catalog:"
+  }
+}

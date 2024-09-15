@@ -1,0 +1,16 @@
+{
+  "name": "@slowlives/starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "start": "vite start"
+  },
+  "devDependencies": {
+    "@accup/slowlives.tsconfig": "workspace:^",
+    "@accup/slowlives.vite-plugin": "workspace:^",
+    "@accup/slowlives": "workspace:^",
+    "vite": "catalog:"
+  }
+}
