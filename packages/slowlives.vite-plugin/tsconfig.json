@@ -1,0 +1,9 @@
+// see: https://www.typescriptlang.org/tsconfig
+{
+  "extends": "@accup/slowlives.tsconfig/vite",
+  "compilerOptions": {
+    "declarationDir": "dist.types"
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

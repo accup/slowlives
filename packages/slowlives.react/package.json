@@ -1,5 +1,5 @@
 {
-  "name": "@accup/slowlives",
+  "name": "@accup/slowlives.react",
   "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.js",
@@ -18,8 +18,15 @@
     "dev": "vite",
     "build": "tsc && vite build"
   },
+  "dependencies": {
+    "@accup/slowlives.flow": "workspace:^"
+  },
   "devDependencies": {
     "@accup/slowlives.tsconfig": "workspace:^",
+    "@vanilla-extract/css": "catalog:",
+    "@vanilla-extract/recipes": "catalog:",
+    "@vanilla-extract/vite-plugin": "catalog:",
+    "@vitejs/plugin-react": "catalog:",
     "typescript": "catalog:",
     "vite": "catalog:"
   }
